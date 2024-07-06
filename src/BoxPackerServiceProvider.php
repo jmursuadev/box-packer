@@ -40,9 +40,18 @@ class BoxPackerServiceProvider extends ServiceProvider
 
         // If you need to publish views
         $this->publishes([
-            __DIR__ . '/resources/views' => resource_path('views/vendor/boxpacker'),
+            __DIR__ . '/resources/views' => resource_path('views/vendor/boxpacker')
+        ], 'views');
+
+        // If you need to publish public assets
+        $this->publishes([
             __DIR__ . '/public/build' => public_path('vendor/jmursuadev/boxpacker'),
-        ]);
+        ], 'public');
+
+        // If you need to publish routes
+        $this->publishes([
+            __DIR__ . $this->routeFilePath => base_path($this->routeFilePath),
+        ], 'routes');
     }
 
     protected function loadHelpers()
