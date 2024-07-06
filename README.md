@@ -2,10 +2,6 @@
 
 a Laravel package that takes a set of products and returns the smallest possible box, or set of boxes, that would fit all the products into, while adhering to specific constraints.
 
-## Introduction
-
-This project is a Laravel 11 application integrated with Vite for asset management. This README will guide you through the installation process and the requirements necessary to set up the project.
-
 ## Requirements
 
 Before you begin, ensure you have the following installed on your system:
