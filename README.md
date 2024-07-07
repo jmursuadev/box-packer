@@ -44,7 +44,7 @@ Available publishable tags:
 
 You can access the box packer page in this url `/package/box-packer` just append this on your laravel app base url
 
-## TEST
+## Unit Test
 
 First, clone the repository to your local machine:
 
